@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>Bootstrap eCommerce Page Template</title>
+
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <?var url = getScriptUrl();?>
+              <a class="nav-link" href='<?=url?>?page=retroComputers'> Home </a>
+            </li>
+            
+           <li class="nav-item active">
+              <?var url = getScriptUrl();?>
+              <a class="nav-link" href='<?=url?>?page=orderPage'> Cart </a>
+           </li> 
+           <li class="nav-item active">
+              <?var url = getScriptUrl();?>
+              <a class="nav-link" href='<?=url?>?page=registration'> Registration </a>
+           </li> 
+           </ul>
+        
+    </div>
+    </div>
+    </nav>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+         
+         
+            
+                <img class="d-block w-100" src="http://retrocomputers.website/retro%20computers%20banner.jpg" alt="First slide">
+                
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../Documents/Unnamed Site 2/images/1920x500.gif" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Item 2 Heading</h5>
+                  <p>Item 2 Description</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../Documents/Unnamed Site 2/images/1920x500.gif" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Item 3 Heading</h5>
+                  <p>Item 3 Description</p>
+                </div>
+              </div>
+            </div>
+         
+            
+            
+
+      <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="row">
+            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="http://retrocomputers.website/small%20button.jpg"></div>
+            <div class="col-lg-6 col-10 ml-1">
+              <h4>Free Shipping</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="http://retrocomputers.website/small%20button.jpg"></div>
+            <div class="col-lg-6 col-10 ml-1">
+              <h4>Free Returns</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="http://retrocomputers.website/small%20button.jpg"></div>
+            <div class="col-lg-6 col-10 ml-1">
+              <h4>Low Prices</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+ 
+    <h2 class="text-center">PRODUCTS</h2>
+    <hr>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="http://retrocomputers.website/computer1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Dekogon Workstation Pro</h5>
+              
+              <p class="card-text">Deluxe deckogon workstation complete with mouse.</p>
+              <div>
+              <p > $400 </p>
+              </div>
+             <label> Quantity </label>
+                <select id = "quantityDPro">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                 </select>
+                 
+                 <input type="button" onclick="DekogonPro()" value = "Add to Cart">
+                 
+
+                <script>
+                  function DekogonPro()
+                  {    
+                    alert("added to cart");
+
+                    var quantity = document.getElementById("quantityDPro").value;
+              
+                    google.script.run.buyDekPRo(quantity);
+                    document.getElementById("quantityDPro").value = "1";
+
+                  }
+                  </script>
+
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="http://retrocomputers.website/computer2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Dekogon Workstation I</h5>
+              <p class="card-text">Standard  deckogon personal computer.</p>
+              <div>
+              <p> $150 </p>
+              </div>
+             <label> Quantity </label>
+                <select id = "quantityDI">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                 </select>
+                 <input type="button" onclick="DekogonI()" value = "Add to Cart">
+                 
+                <script>
+                  function DekogonI(){  
+                    alert("added to cart");
+                    var quantity = document.getElementById("quantityDI").value; 
+                    google.script.run.buyDekI(quantity);
+                    document.getElementById("quantityDI").value = "1";
+                  }
+                </script>
+           </div>  
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="http://retrocomputers.website/Apple%202.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Apple II</h5>
+              <p class="card-text">This is the Apple II. It's a very iconic retro computer.</p>
+              <div>
+              <p> $300 </p>
+              </div>
+              
+                <label>Quantity </label>
+                <select id = "AppQuantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                 </select>
+                 <button id = "Applebutt" > "Add to Cart"</button>  
+                 
+
+                <script>
+                  document.getElementById("Applebutt").addEventListener("click", Applebttn);
+                  function Applebttn() 
+                  { 
+                    alert("added to cart");
+                    var quantity = document.getElementById("AppQuantity").value;
+              
+                    google.script.run.buyApple(quantity);
+                    document.getElementById("AppQuantity").value = "1";
+
+                  }
+                  
+                </script>
+              
+          </div>
+        </div>
+      </div>
+</div>
+            
+        <div class="col-lg-4">
+          <ul class="list-unstyled">
+    
+       
+        <div class="col-md-4 col-6 col-lg-11 offset-lg-1">
+          <address>
+            <strong>Retro Computers, Inc.</strong>
+            <br>
+            Austin, TX, 78705<br>
+            <abbr title="Phone">P:</abbr> (512) 555-5555
+          </address>
+          <address>
+            <strong>RR1 Group</strong><br>
+            <a href="mailto:#">@txstate.com</a>
+          </address>
+        </div>
+
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © MyWebsite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
