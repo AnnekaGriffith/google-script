@@ -83,3 +83,4 @@ function DekogonITest() {
     equal(ws.getRange(2, 1),ws.getRange(3, 1),'Success'); //Checks for appropriately identical content in recently updated cells
     
   });
+}
