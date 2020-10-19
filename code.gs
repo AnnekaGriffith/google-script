@@ -21,7 +21,7 @@ function myFunction() {
 }
 
 function buyApple(quantity) {
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
   var ws = ss.getSheetByName("Cart");
   var productId = "Apple II";
@@ -31,7 +31,7 @@ function buyApple(quantity) {
   ws.appendRow([productId, description, price, quantity]) 
 }
 function buyDekPRo(quantity) {
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
   var ws = ss.getSheetByName("Cart");
   var productId = "Dekogon Workstation Pro";
@@ -41,7 +41,7 @@ function buyDekPRo(quantity) {
   ws.appendRow([productId, description, price, quantity]) 
 }
 function buyDekI(quantity) {
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
   var ws = ss.getSheetByName("Cart");
   var productId = "Dekogon Workstation I";
@@ -53,7 +53,7 @@ function buyDekI(quantity) {
 
 function clearCart() 
 {
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
   var ws = ss.getSheetByName("Cart");
   ws.getRange("A2:D999").clearContent();
@@ -62,7 +62,7 @@ function clearCart()
 function userOrder(name, address, city, zip, state) {
   
   // get spreadsheet by name
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
   var ws = ss.getSheetByName("User");
 
@@ -71,7 +71,7 @@ function userOrder(name, address, city, zip, state) {
 
 
 function fillOrder() {
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
   var wsC = ss.getSheetByName("Cart");
   var wsU = ss.getSheetByName("User")
@@ -89,7 +89,7 @@ function fillOrder() {
 }
 
 function combineSheets() {
- var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+ var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
  var ss = SpreadsheetApp.openByUrl(url);
  var allsheets = ss.getSheets(); 
  var combineSht = ss.getSheetByName("Orders"); 
@@ -113,9 +113,9 @@ function combineSheets() {
 function checkUser(uName, uPass) {
   
   // get spreadsheet by name
-  var url = "https://docs.google.com/spreadsheets/d/1D465I5RKnoyZLWZ8nZCC9zm3dsSMi7Fifvi3R4jQUcs/edit#gid=698686533";
+  var url = "https://docs.google.com/spreadsheets/d/1jX40bGMeHRSFsUzBDAiTT8Nbm_CD96QhyzFm15ZJzfU/edit?usp=sharing";
   var ss = SpreadsheetApp.openByUrl(url);
-  var ws = ss.getSheetByName("User Accounts");
+  var ws = ss.getSheetByName("User");
   
   var wName = ws.getRange("Username");
   var wPass = ws.getRange("Password");
